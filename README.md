@@ -33,7 +33,7 @@ Clone the repository locally
 
 ### Create a new post::
     ```bash
-        curl -X POST -H "Content-Type: application/json" -d '{"title": "New Post", "body": "This is the body of the new post"}' http://localhost:8000/api/posts
+        curl -X POST -H "Accept: application/json" -H "Content-Type: application/json" -d '{"title": "New Post", "body": "This is the body of the new post"}' http://localhost:8000/api/posts
     ```
 
 ### Get all posts:
@@ -48,7 +48,7 @@ Clone the repository locally
 
 ### Update a post:
     ```bash
-        curl -X PUT -H "Content-Type: application/json" -d '{"title": "Updated Post", "body": "This is the updated body of the post"}' http://localhost:8000/api/posts/1
+        curl -X PUT -H "Accept: application/json" -H "Content-Type: application/json" -d '{"title": "Updated Post", "body": "This is the updated body of the post"}' http://localhost:8000/api/posts/1
     ```
 
 ### Delete a post:

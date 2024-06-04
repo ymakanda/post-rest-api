@@ -23,7 +23,7 @@ class UpdatePostRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => ['required', 'string', 'max:255', Rule::unique('posts')->ignore($this->post)],
+            'title' => ['required', 'string', 'max:255', 'unique:posts,title,' . $this->post],
             'body' => ['required', 'string']
             
         ];
